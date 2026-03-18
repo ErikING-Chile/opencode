@@ -10,13 +10,16 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "opencode#test": {
+    "arche#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@opencode-ai/app#test": {
+    "@arche-ai/app#test": {
       "dependsOn": ["^build"],
       "outputs": []
+    },
+    "@arche-ai/telegram-bot#typecheck": {
+      "dependsOn": ["^build"]
     }
   }
 }
